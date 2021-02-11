@@ -6,6 +6,8 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 
 ## De Morgánove zákony 2:
 
+Program vhdl :
+
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -32,7 +34,7 @@ Výstup s programu edaplayground:
 
 Obrázok výstupu:
 
-![Screenshot od EDA Playground DML](Images/DML.png)
+![Screenshot od EDA Playground DML](Images/DML.PNG)
 
 
 https://www.edaplayground.com/x/8MeM
