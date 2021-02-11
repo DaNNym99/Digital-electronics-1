@@ -16,11 +16,11 @@ begin
 end architecture dataflow;
 ```
 ```LaTeX
-\begin{align*}
+begin{align*}
     f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
     f(c,b,a)_{\textup{NAND}} =&\\
     f(c,b,a)_{\textup{NOR}} =&\\
-\end{align*}
+end{align*}
 ```
 
 Link pre edaplayground (De Morgánove zákony): https://www.edaplayground.com/x/aXrz
