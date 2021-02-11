@@ -67,4 +67,4 @@ Výstup s programu edaplayground:
 
 Obrázok výstupu:
 
-![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DL.PNG)
+![Screenshot od EDA Playground DML](Images/DL.png)
