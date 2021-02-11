@@ -34,7 +34,7 @@ Výstup s programu edaplayground:
 
 Obrázok výstupu:
 
-![Screenshot od EDA Playground DML](Images/DML.png)
+![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DML.PNG)
 
 
 https://www.edaplayground.com/x/8MeM
