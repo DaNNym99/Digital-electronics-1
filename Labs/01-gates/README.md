@@ -1,10 +1,10 @@
 #Laboratórna úloha číslo 1
 
-## GitHub 1:
+## 1. GitHub:
 
 Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 
-## De Morgánove zákony 2:
+## 2. De Morgánove zákony:
 
 Program vhdl :
 
@@ -36,5 +36,35 @@ Obrázok výstupu:
 
 ![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DML.PNG)
 
+## 3. Distributívne zákony:
 
-https://www.edaplayground.com/x/8MeM
+Program vhdl :
+
+```vhdl
+architecture dataflow of gates is
+begin
+    Distributivelaw11_o <= (x_i and y_i) or (x_i and z_i);
+    Distributivelaw12_o <= x_i and (y_i or z_i);
+    Distributivelaw21_o <= (x_i or y_i) and (x_i or z_i);
+    Distributivelaw22_o <= x_i or (y_i and z_i);
+
+end architecture dataflow;
+```
+
+Link pre edaplayground (De Morgánove zákony): https://www.edaplayground.com/x/8MeM
+
+Výstup s programu edaplayground:
+| **z** | **y** |**x** | **DL11(x,y,z)** | **DL12(x,y,z)** | **DL21(x,y,z)** | **DL22(x,y,z)** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+Obrázok výstupu:
+
+![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DL.PNG)
