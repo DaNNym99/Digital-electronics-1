@@ -6,12 +6,6 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 
 ## 2. De Morgánove zákony:
 
-begin{align*}
-    f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
-    f(c,b,a)_{\textup{NAND}} =&\\
-    f(c,b,a)_{\textup{NOR}} =&\\
-end{align*}
-
 Program vhdl :
 
 ```vhdl
