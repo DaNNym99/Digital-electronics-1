@@ -19,8 +19,8 @@ end{align*}
    * Links
    * Table
    * Listing of VHDL source code
-   
-   
+
+
 | **Operator** | **Description** |
 | :-: | :-- |
 | `<=` | Value assignment |
@@ -32,3 +32,7 @@ end{align*}
 | `xor` | Exclusive OR |
 | `xnor` | Exclusive OR with negated output |
 | `-- comment` | Comments |
+
+
+
+github with Atom
