@@ -1,4 +1,4 @@
-#Laboratórna úloha číslo 1
+# Laboratórna úloha číslo 1
 
 ## 1. GitHub:
 
