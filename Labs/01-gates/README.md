@@ -15,19 +15,24 @@ begin
 
 end architecture dataflow;
 ```
-```LaTeX
-begin{align*}
-    f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
-    f(c,b,a)_{\textup{NAND}} =&\\
-    f(c,b,a)_{\textup{NOR}} =&\\
-end{align*}
-```
 
 Link pre edaplayground (De Morgánove zákony): https://www.edaplayground.com/x/aXrz
 
+Výstup s programu edaplayground:
+| **c** | **b** |**a** | **f(c,b,a)** | **fNAND(c,b,a)** | **fNOR(c,b,a)** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
 
+Obrázok výstupu:
 
-
+![Screenshot od EDA Playground DML](DML.png)
 
 
 https://www.edaplayground.com/x/8MeM
