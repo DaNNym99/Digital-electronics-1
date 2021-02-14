@@ -7,6 +7,7 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 ## 2. De Morgánove zákony:
 
 Rovnice:
+
 ![Rovnica DL](Images/Rovnice1.png)
 
 Program vhdl :
@@ -42,6 +43,7 @@ Obrázok výstupu:
 ## 3. Distributívne zákony:
 
 Rovnice:
+
 ![Rovnica DL](Images/Rovnice2.png)
 
 Program vhdl :
