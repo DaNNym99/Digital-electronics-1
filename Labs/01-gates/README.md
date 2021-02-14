@@ -39,7 +39,7 @@ Výstup z programu edaplayground:
 
 Obrázok výstupu:
 
-![Screenshot od EDA Playground DML](Images/DML.PNG)
+![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DML.PNG)
 
 ## 3. Distributívne zákony:
 
