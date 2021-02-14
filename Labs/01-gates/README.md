@@ -1,4 +1,5 @@
 # Laboratórna úloha číslo 1
+### *Daniel Haluška*
 
 ## 1. GitHub:
 
