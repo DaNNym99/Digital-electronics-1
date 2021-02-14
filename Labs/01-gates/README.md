@@ -2,7 +2,7 @@
 
 ## 1. GitHub:
 
-[Link repozitára] (https://github.com/DaNNym99/Digital-electronics-1)
+[Link repozitára](https://github.com/DaNNym99/Digital-electronics-1)
 
 ## 2. De Morgánove zákony:
 
