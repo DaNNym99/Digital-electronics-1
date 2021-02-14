@@ -1,4 +1,4 @@
-#Laboratórna úloha číslo 1
+# Laboratórna úloha číslo 1
 
 ## 1. GitHub:
 
@@ -73,4 +73,4 @@ Výstup z programu edaplayground:
 
 Obrázok výstupu:
 
-![Screenshot od EDA Playground DML](https://github.com/DaNNym99/Digital-electronics-1/blob/main/Labs/01-gates/Images/DL.PNG)
+![Screenshot od EDA Playground DML](Images/DL.png)
