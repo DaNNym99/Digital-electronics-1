@@ -6,6 +6,9 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 
 ## 2. De Morgánove zákony:
 
+Rovnice:
+![Rovnica DL](Images/Rovnice1.png)
+
 Program vhdl :
 
 ```vhdl
@@ -20,7 +23,7 @@ end architecture dataflow;
 
 Link pre edaplayground (De Morgánove zákony): https://www.edaplayground.com/x/aXrz
 
-Výstup s programu edaplayground:
+Výstup z programu edaplayground:
 | **c** | **b** |**a** | **f(c,b,a)** | **fNAND(c,b,a)** | **fNOR(c,b,a)** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 | 1 | 1 |
@@ -38,6 +41,9 @@ Obrázok výstupu:
 
 ## 3. Distributívne zákony:
 
+Rovnice:
+![Rovnica DL](Images/Rovnice2.png)
+
 Program vhdl :
 
 ```vhdl
@@ -51,9 +57,9 @@ begin
 end architecture dataflow;
 ```
 
-Link pre edaplayground (De Morgánove zákony): https://www.edaplayground.com/x/8MeM
+Link pre edaplayground (Distributívne zákony): https://www.edaplayground.com/x/8MeM
 
-Výstup s programu edaplayground:
+Výstup z programu edaplayground:
 | **z** | **y** |**x** | **DL11(x,y,z)** | **DL12(x,y,z)** | **DL21(x,y,z)** | **DL22(x,y,z)** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
