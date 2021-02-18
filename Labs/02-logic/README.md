@@ -2,7 +2,7 @@
 ### *Autor : Daniel Haluška ID:220816*
 
 
-## 1. Pravdivostna tabulka:
+## 1. Pravdivostná tabuľka:
 
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B > A** | **B = A** | **B < A** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
