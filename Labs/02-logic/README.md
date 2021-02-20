@@ -1,5 +1,5 @@
 # Laboratórna úloha číslo 2
-### *Autor : Daniel Haluška ID:220816*
+### *Autor : Daniel Haluška ID:220816 https://github.com/DaNNym99/Digital-electronics-1* 
 
 
 ## 1. Pravdivostná tabuľka:
