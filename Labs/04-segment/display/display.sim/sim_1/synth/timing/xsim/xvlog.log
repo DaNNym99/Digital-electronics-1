@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/synth/timing/xsim/top_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_7seg
+INFO: [VRFC 10-311] analyzing module glbl
