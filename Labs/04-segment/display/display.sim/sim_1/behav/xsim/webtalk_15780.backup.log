@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 11 17:00:53 2021
+# Process ID: 15780
+# Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/FEKT -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "E:/FEKT" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 11 17:00:53 2021...
