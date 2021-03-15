@@ -29,6 +29,7 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 | T14 | AN[5] | KAT 6 |
 | K2 | AN[6] | KAT 7 |
 | U13 | AN[7] | KAT 8 |
+| H17 - V11 | LED[0-15] | LED 1-16 |
 
 
 ### 1.3. Tabuľka prepočátaných hodnôt
@@ -159,24 +160,33 @@ clk_en0 : entity work.clock_enable
 ### 3.2. Rozšírenie pre 16-bit
 
 ```vhdl
-p_cnt_up_down : process(clk)
-    begin
-        if rising_edge(clk) then
+clk_en1 : entity work.clock_enable
+        generic map(
+            --- WRITE YOUR CODE HERE
+            g_MAX => 1000000
+        )
+        port map(
+            --- WRITE YOUR CODE HERE
+            clk   => CLK100MHZ,
+            reset => BTNC,
+            ce_o  => s_en_16
+        );
         
-            if (reset = '1') then               -- Synchronous reset
-                s_cnt_local <= (others => '0'); -- Clear all bits
-
-            elsif (en_i = '1') then       -- Test if counter is enabled
-
-                -- TEST COUNTER DIRECTION HERE
-                if (cnt_up_i = '1') then
-                    s_cnt_local <= s_cnt_local + 1;
-                elsif (cnt_up_i = '0') then
-                    s_cnt_local <= s_cnt_local - 1;
-                end if;
-            end if;
-        end if;
-    end process p_cnt_up_down;
+        bin_cnt1 : entity work.cnt_up_down
+        generic map(
+            --- WRITE YOUR CODE HERE
+            g_CNT_WIDTH => 16
+        )
+        port map(
+            --- WRITE YOUR CODE HERE
+            clk   => CLK100MHZ,
+            reset => BTNC,
+            en_i  => s_en_16,
+            cnt_up_i  => SW,
+            cnt_o  => s_cnt_16
+         );
+        -- Display input value on LEDs
+    LED(16-1 downto 0) <= s_cnt_16;
 ```
 
 ### 3.3. Schema 4-bit + 16-bit čítača
