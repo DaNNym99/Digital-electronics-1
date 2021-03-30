@@ -38,6 +38,10 @@ Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
    | 1 | 0 | 1 | Invertor |
    | 1 | 1 | 0 | Invertor |
 
+### 1.3. Rovnice
+
+![Vystup](Images/equations.jpg)
+
 ## 2. D-latch
 
 ### 2.1. Proces p_d_latch
