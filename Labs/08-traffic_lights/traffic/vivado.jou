@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  1 17:48:04 2021
+# Process ID: 13748
+# Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10400 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\08-traffic_lights\traffic\traffic.xpr
+# Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/vivado.log
+# Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc_improved.vhd} w ]
+add_files -fileset sim_1 {{E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc_improved.vhd}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_tlc_improved [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_tlc_improved.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_tlc_improved/uut_tlc_improved/s_state}} 
+relaunch_sim
+close_sim
+launch_simulation
+source tb_tlc_improved.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_tlc_improved/uut_tlc_improved/s_state}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_tlc_improved/uut_tlc_improved/s_state}} 
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+close_project

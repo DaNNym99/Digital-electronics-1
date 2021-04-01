@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 31 19:57:54 2021
+# Process ID: 4212
+# Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15608 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\08-traffic_lights\traffic\traffic.xpr
+# Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/vivado.log
+# Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.xpr}
+update_compile_order -fileset sources_1
+close [ open {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.srcs/sources_1/new/tlc_improved.vhd} w ]
+add_files {{E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/08-traffic_lights/traffic/traffic.srcs/sources_1/new/tlc_improved.vhd}}
+update_compile_order -fileset sources_1
