@@ -1,11 +1,11 @@
-# Laboratórna úloha číslo 7
+# Laboratórna úloha číslo 8
 ### *Daniel Haluška*
 
 ## GitHub:
 
 Link repozitára: https://github.com/DaNNym99/Digital-electronics-1
 
-## 1. Pravdivostne tabulky
+## 1. Priprava cvicenia
 
 ### 1.1. Tabulka stavov
 
