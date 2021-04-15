@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 11 21:36:46 2021
+# Process ID: 10016
+# Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12168 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\Projekt\Projekt\Projekt.xpr
+# Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/vivado.log
+# Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_controler.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_controler/uut_controler/s_pass}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

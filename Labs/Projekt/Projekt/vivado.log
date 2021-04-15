@@ -1,0 +1,836 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 15:08:19 2021
+# Process ID: 19572
+# Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17764 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\Projekt\Projekt\Projekt.xpr
+# Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/vivado.log
+# Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/PROGRAMY/Vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse {{E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/cnt_up_down.vhd} {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/driver_7seg_4digits.vhd} {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/clock_enable.vhd} {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/hex_7seg.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {{E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/top.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new
+file mkdir E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1
+file mkdir {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new}
+close [ open {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new/Arty A7-100T.xdc} w ]
+add_files -fileset constrs_1 {{E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/constrs_1/new/Arty A7-100T.xdc}}
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 18:18:48 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 18:20:43 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 18:24:41 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/FEKT -notrace
+couldn't read file "E:/FEKT": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 15 18:26:01 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_controler_behav -key {Behavioral:sim_1:Functional:tb_controler} -tclbatch {tb_controler.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_controler.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_controler_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1188.484 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_controler/uut_controler/s_pass}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1239.066 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1686.605 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_controler/uut_controler/s_pass_1}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_controler/uut_controler/s_pass_2}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_controler/uut_controler/s_pass_3}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_controler/uut_controler/s_pass_4}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:32:59 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:35:03 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_controler_behav -key {Behavioral:sim_1:Functional:tb_controler} -tclbatch {tb_controler.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_controler.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_controler_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1686.605 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_controler/uut_controler/s_pass_1}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_controler/uut_controler/s_pass_2}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_controler/uut_controler/s_pass_3}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_controler/uut_controler/s_pass_4}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_controler/uut_controler/s_pass}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:38:11 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:41:04 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_controler_behav -key {Behavioral:sim_1:Functional:tb_controler} -tclbatch {tb_controler.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_controler.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_controler_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_reset_pass}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_pass_1}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_pass_2}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_pass_3}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_pass_4}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_controler/uut_controler/s_pass}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1686.605 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1686.605 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:50:16 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.sim/sim_1/behav/xsim'
+"xelab -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/PROGRAMY/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b1384860b37048548afa6137cee87c78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_controler_behav xil_defaultlib.tb_controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.controler [controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.keypad_4x3 [keypad_4x3_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_controler
+Built simulation snapshot tb_controler_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1686.605 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Apr 15 19:51:47 2021] Launched synth_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Apr 15 19:52:39 2021] Launched impl_1...
+Run output will be captured here: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1686.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2057.328 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2057.328 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2057.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 2205.609 ; gain = 519.004
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 15 19:56:42 2021...

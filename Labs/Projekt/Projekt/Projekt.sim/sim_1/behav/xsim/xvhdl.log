@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.srcs/sim_1/new/tb_controler.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_controler'
