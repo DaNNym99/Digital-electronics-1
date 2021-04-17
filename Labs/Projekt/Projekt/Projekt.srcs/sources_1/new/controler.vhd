@@ -41,6 +41,8 @@ entity controler is
         alarm_o : out  std_logic;
         locker_o : out  std_logic;
         
+        rgb_o : out  std_logic_vector(3 - 1 downto 0);
+        
         data0_o : out  std_logic_vector(4 - 1 downto 0);
         data1_o : out  std_logic_vector(4 - 1 downto 0);
         data2_o : out  std_logic_vector(4 - 1 downto 0);
@@ -59,10 +61,9 @@ architecture Behavioral of controler is
     
     signal   s_clk  : std_logic; 
     
-    signal   s_cnt  : unsigned(5 - 1 downto 0):= b"0_0000";
+    signal   s_cnt  : unsigned(36 - 1 downto 0):= b"0000_0000_0000_0000_0000_0000_0000_0000_0000";
     
     signal   s_alarm  : std_logic;
-    signal   s_door  : std_logic;
     signal   s_reset_pass : std_logic;
     
     signal   s_pass_1  : std_logic_vector(4 - 1 downto 0);
@@ -81,8 +82,11 @@ architecture Behavioral of controler is
     constant c_UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";
     constant c_CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";
     constant c_ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";
-
     
+    constant c_RED : std_logic_vector(3 - 1 downto 0) := b"100";
+    constant c_GREEN : std_logic_vector(3 - 1 downto 0) := b"010";
+    constant c_YELOW : std_logic_vector(3 - 1 downto 0) := b"110";
+
     begin
     
     
@@ -98,11 +102,6 @@ architecture Behavioral of controler is
         end if;
         
         if falling_edge(clk) then
-            
-            data0_o <= s_pass_1;
-            data1_o <= s_pass_2;
-            data2_o <= s_pass_3;
-            data3_o <= s_pass_4;
             
             if(number_i = c_UNDEFINED)then
             
@@ -200,6 +199,7 @@ architecture Behavioral of controler is
                         else 
                             s_state <= CLOSE;  -- mozna led
                             locker_o <= '0';
+                            rgb_o <= c_RED;
                         end if;
                     
                     when OPENED =>
@@ -207,6 +207,7 @@ architecture Behavioral of controler is
                         if (s_cnt < c_DELAY_10SEC) then
                             s_cnt <= s_cnt + 1;
                             locker_o <= '1';
+                            rgb_o <= c_GREEN;
                         else
                             s_state <= WAITH;
                             locker_o <= '0';
@@ -217,7 +218,8 @@ architecture Behavioral of controler is
                     
                         if (s_cnt < c_DELAY_10SEC) then
                             s_cnt <= s_cnt + 1;
-                        elsif (s_door = '1') then
+                            rgb_o <= c_YELOW;
+                        elsif (door_i = '1') then
                             s_state <= CLOSE;
                             s_reset_pass <= '1';
                             s_cnt   <= c_ZERO;
@@ -237,12 +239,14 @@ architecture Behavioral of controler is
                         
                     when ALARM =>
                         s_alarm <= '1';
+                        s_state <= CLOSE;
                      
                     when MASTER =>
-                        if (s_door = '1') then
+                        if (door_i = '1') then
                             s_state <= CLOSE;
                         else    
                             s_state <= MASTER;
+                            rgb_o <= c_GREEN;
                         end if;
                     when others =>
                         s_state <= CLOSE;
@@ -264,5 +268,12 @@ architecture Behavioral of controler is
             end if; -- Alarm
         end if; -- Falling edge
     end process p_result_controler;
+    
+    alarm_o <= s_alarm ;
+    
+    data0_o <= s_pass_1;
+    data1_o <= s_pass_2;
+    data2_o <= s_pass_3;
+    data3_o <= s_pass_4;
     
 end Behavioral;
