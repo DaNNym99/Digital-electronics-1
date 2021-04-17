@@ -39,7 +39,12 @@ entity top is
                       
            ja : in STD_LOGIC_VECTOR (8-1 downto 0);
            jb : out STD_LOGIC_VECTOR (8-1 downto 0);
-           jc : out STD_LOGIC_VECTOR (8-1 downto 0)    
+           jc : out STD_LOGIC_VECTOR (8-1 downto 0); 
+           
+           led0_b : out STD_LOGIC;
+           led0_g : out STD_LOGIC;
+           led0_r : out STD_LOGIC
+              
            );
            
            
@@ -59,6 +64,8 @@ architecture Behavioral of top is
     signal   s_data1  : std_logic_vector(4 - 1 downto 0);
     signal   s_data2  : std_logic_vector(4 - 1 downto 0);
     signal   s_data3  : std_logic_vector(4 - 1 downto 0);
+    
+    signal   s_led0  : std_logic_vector(3 - 1 downto 0);
     
     
 begin
@@ -90,7 +97,8 @@ begin
             data0_o => s_data0,
             data1_o => s_data1,
             data2_o => s_data2,
-            data3_o => s_data3
+            data3_o => s_data3,
+            rgb_o => s_led0
     );
     
     driver_seg_4 : entity work.driver_7seg_4digits
@@ -110,7 +118,17 @@ begin
             seg_o(3) => jb(3),
             seg_o(2) => jb(2),
             seg_o(1) => jb(1),
-            seg_o(0) => jb(0)  
+            seg_o(0) => jb(0), 
+            
+             dig_o(0) => jc(0),
+             dig_o(1) => jc(1),
+             dig_o(2) => jc(2),
+             dig_o(3) => jc(3)
      );
 
+        led0_b <= s_led0(0);
+        led0_g <= s_led0(1);
+        led0_r <= s_led0(2);
+     
+     
 end architecture Behavioral;

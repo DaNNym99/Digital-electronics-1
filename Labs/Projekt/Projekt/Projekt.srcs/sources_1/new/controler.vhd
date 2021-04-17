@@ -51,7 +51,7 @@ end controler;
 
 architecture Behavioral of controler is
     
-    type   t_state is (CLOSE, OPENED, WAITH, ALARM, MASTER);
+    type   t_state is (CLOSE, OPENED, WAITH, AFTERTIME, ALARM, MASTER);
     signal s_state  : t_state;
     
     type   t_state_pass is (POS1, POS2, POS3, POS4, ENT);
@@ -71,18 +71,17 @@ architecture Behavioral of controler is
     signal   s_pass_4  : std_logic_vector(4 - 1 downto 0);
     signal   s_pass : std_logic_vector(16 - 1 downto 0);
     
-    constant c_DELAY_10SEC : unsigned(5 - 1 downto 0) := b"1_0000"; --upravit podla cnt
-    constant c_ZERO       : unsigned(5 - 1 downto 0) := b"0_0000";
+    constant c_DELAY_10SEC : unsigned(36 - 1 downto 0) := b"0010_0101_0100_0000_1011_1110_0100_0000_0000"; --upravit podla cnt
+    constant c_ZERO       : unsigned(36 - 1 downto 0) := b"0000_0000_0000_0000_0000_0000_0000_0000_0000";
     
     constant c_MASTER_pass : std_logic_vector(16 - 1 downto 0) := b"0001_0001_0001_0001";
     constant c_SLAVE_pass : std_logic_vector(16 - 1 downto 0) := b"0010_0010_0010_0010";
     constant c_UNDEFINED_pass : std_logic_vector(16 - 1 downto 0) := b"1111_1111_1111_1111";
     
-    constant UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";
-    constant CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";
-    constant ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";
-    constant HIGH : std_logic := '1';
-    constant LOW : std_logic := '0';
+    constant c_UNDEFINED : std_logic_vector(4 - 1 downto 0) := b"1111";
+    constant c_CANCEL : std_logic_vector(4 - 1 downto 0) := b"1011";
+    constant c_ENTER : std_logic_vector(4 - 1 downto 0) := b"1010";
+
     
     begin
     
@@ -92,10 +91,10 @@ architecture Behavioral of controler is
         
         if s_reset_pass = '1' then -- treba dako vyhutat
             s_pass <= c_UNDEFINED_pass;
-            s_pass_1 <= UNDEFINED;
-            s_pass_2 <= UNDEFINED;
-            s_pass_3 <= UNDEFINED;
-            s_pass_4 <= UNDEFINED;
+            s_pass_1 <= c_UNDEFINED;
+            s_pass_2 <= c_UNDEFINED;
+            s_pass_3 <= c_UNDEFINED;
+            s_pass_4 <= c_UNDEFINED;
         end if;
         
         if falling_edge(clk) then
@@ -105,18 +104,18 @@ architecture Behavioral of controler is
             data2_o <= s_pass_3;
             data3_o <= s_pass_4;
             
-            if(number_i = UNDEFINED)then
+            if(number_i = c_UNDEFINED)then
             
             
             else
  
                 case (s_state_pass) is
                     when POS1 =>
-                        if (number_i = CANCEL OR number_i = ENTER)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                        if (number_i = c_CANCEL OR number_i = c_ENTER)then
+                            s_pass_1 <= c_UNDEFINED;
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                             s_state_pass <= POS1;
                         else 
                             s_pass_1 <= number_i;
@@ -125,11 +124,11 @@ architecture Behavioral of controler is
                         
                     when POS2 => 
                     
-                        if (number_i = CANCEL OR number_i = ENTER)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                        if (number_i = c_CANCEL OR number_i = c_ENTER)then
+                            s_pass_1 <= c_UNDEFINED;
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                             s_state_pass <= POS1;
                         else 
                             s_pass_2 <= number_i;
@@ -137,11 +136,11 @@ architecture Behavioral of controler is
                         end if;
                         
                     when POS3 => 
-                        if (number_i = CANCEL OR number_i = ENTER)then    
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                        if (number_i = c_CANCEL OR number_i = c_ENTER)then    
+                            s_pass_1 <= c_UNDEFINED;
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                             s_state_pass <= POS1;
                         else 
                             s_pass_3 <= number_i;
@@ -149,11 +148,11 @@ architecture Behavioral of controler is
                         end if;  
                         
                     when POS4 => 
-                        if (number_i = CANCEL)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                        if (number_i = c_CANCEL)then
+                            s_pass_1 <= c_UNDEFINED;
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                             s_state_pass <= POS1;
                         else 
                             s_pass_4 <= number_i;
@@ -161,19 +160,19 @@ architecture Behavioral of controler is
                         end if;
                         
                      when ENT => 
-                        if (number_i = CANCEL)then
-                            s_pass_1 <= UNDEFINED;
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                        if (number_i = c_CANCEL)then
+                            s_pass_1 <= c_UNDEFINED;
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                             s_state_pass <= POS1;
-                        elsif (number_i = ENTER)then
+                        elsif (number_i = c_ENTER)then
                             s_state_pass <= POS1;
                             s_pass <= s_pass_1 & s_pass_2 & s_pass_3 & s_pass_4 ;
-                            s_pass_1 <= UNDEFINED; -- abo nejaky znak iny 
-                            s_pass_2 <= UNDEFINED;
-                            s_pass_3 <= UNDEFINED;
-                            s_pass_4 <= UNDEFINED;
+                            s_pass_1 <= c_UNDEFINED; -- abo nejaky znak iny 
+                            s_pass_2 <= c_UNDEFINED;
+                            s_pass_3 <= c_UNDEFINED;
+                            s_pass_4 <= c_UNDEFINED;
                         else
                             s_state_pass <= ENT;
                         end if;
@@ -222,16 +221,20 @@ architecture Behavioral of controler is
                             s_state <= CLOSE;
                             s_reset_pass <= '1';
                             s_cnt   <= c_ZERO;
-                        elsif (s_pass = c_MASTER_pass) then
-                            s_state <= MASTER;
-                            s_reset_pass <= '1';
-                            s_cnt   <= c_ZERO;
                         else
-                            s_state <= ALARM;
+                            s_state <= AFTERTIME;
                             s_cnt   <= c_ZERO;
                             s_reset_pass <= '1';
                         end if;
                     
+                    when AFTERTIME => --dopisaù 
+                        if (s_pass = c_MASTER_pass) then
+                            s_state <= MASTER;
+                            s_reset_pass <= '1';
+                        else    
+                        s_alarm <= '1';
+                        end if;
+                        
                     when ALARM =>
                         s_alarm <= '1';
                      
@@ -259,11 +262,7 @@ architecture Behavioral of controler is
                     s_alarm <='1';
                 end if; 
             end if; -- Alarm
-            end if; -- Falling edge
+        end if; -- Falling edge
     end process p_result_controler;
-    
-    
-    
-    
     
 end Behavioral;
