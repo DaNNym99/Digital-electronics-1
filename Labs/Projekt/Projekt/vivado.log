@@ -9,3 +9,13 @@
 # Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/vivado.log
 # Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/Projekt/Projekt/Projekt.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/PROGRAMY/Vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1005.348 ; gain = 0.000
+update_compile_order -fileset sources_1
