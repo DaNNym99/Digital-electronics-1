@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Apr 15 17:58:33 2021
-# Process ID: 12964
+# Start of session at: Sun Apr 18 12:26:10 2021
+# Process ID: 3352
 # Current directory: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/06-display_driver/display_driver
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14644 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12500 E:\FEKT VUT\FEKT VUT 4\BPC-DE1\Git\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
 # Log file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/06-display_driver/display_driver/vivado.log
 # Journal file: E:/FEKT VUT/FEKT VUT 4/BPC-DE1/Git/Digital-electronics-1/Labs/06-display_driver/display_driver\vivado.jou
 #-----------------------------------------------------------
@@ -19,6 +19,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/PROGRAMY/Vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.559 ; gain = 0.000
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 15 18:32:29 2021...
+eexit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 13:21:14 2021...
