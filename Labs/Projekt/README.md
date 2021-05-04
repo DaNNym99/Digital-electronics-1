@@ -9,36 +9,36 @@ https://github.com/janhonkys/Digital-electronics-1/tree/main/Labs/project
 Cílem projektu je vytvořit terminál pro odemčení / zamčení dveří pomocí 4místného PIN kódu, s použitím 4x3 tlačítek, 4 sedmisegmentových displejů, relé pro ovládání zámku dveří.
 
 ### Návrh vizualizace řešení
-![Screenshot](/Labs/project/Images/doorschema3.jpg)
+![Screenshot](Images/doorschema3.jpg)
 ### Stavový diagram process p_result controller
-![Screenshot](/Labs/project/Images/p_result1.jpg)
+![Screenshot](Images/p_result1.jpg)
 ### Stavový diagram process p_keypad watcher
-![Screenshot](/Labs/project/Images/p_keypad1.jpg)
+![Screenshot](Images/p_keypad1.jpg)
 ## Popis hardwaru
 ### Základní deska Arty A7-100T
 Parametry: 4 přepínače, 4 tlačítka, 1 tlačítko reset, 4 LEDs, 4 RGB LEDs, interní hodinový signál, 4 PMOD rozhraní, USB-UART rozhraní<br><br>
-![Screenshot](/Labs/project/Images/arty.jpg)
+![Screenshot](Images/arty.jpg)
  
 ### Klávesnice
 Klávesnice je vzhledem k počtu vstupů na základní desce navržena maticově, 4 řádky, 3 sloupce.
 #### Schéma zapojení klávesnice
-![Screenshot](/Labs/project/Images/keyboard.png)
+![Screenshot](Images/keyboard.png)
 
 #### Plošný spoj klávesnice
-![Screenshot](/Labs/project/Images/keypad.jpg)
+![Screenshot](Images/keypad.jpg)
 
 #### Osazovací plán plošného spoje klávesnice
-![Screenshot](/Labs/project/Images/keypad1.jpg)
+![Screenshot](Images/keypad1.jpg)
 
 #### Schéma zapojení displeje
 Z důvodu omezených možností základní desky jsme navrhli použití 4 7mi segmentových displejů K121, zapojených se společnou katodou. V obrázku na horní straně schéma zapojení zámku a externí sirény.<br><br>
-![Screenshot](/Labs/project/Images/disp.png)
+![Screenshot](Images/disp.png)
 
 #### Plošný spoj displeje
-![Screenshot](/Labs/project/Images/display.jpg)
+![Screenshot](Images/display.jpg)
 
 #### Osazovací plán plošného spoje displeje
-![Screenshot](/Labs/project/Images/display1.jpg)
+![Screenshot](Images/display1.jpg)
 
 ## Popis VHDL modulů a simulací
 ### Klávesnice
@@ -293,7 +293,7 @@ end Behavioral;
 ```
 #### Screenshot simulace tb_keypad
 Postupně zkoušíme stisknutí jednotlivých tlačítek, simulace proběhla v pořádku, výstupní signál odpovídá převodní tabulce.<br><br>
-![Screenshot](/Labs/project/Images/tb_keypad.jpg)
+![Screenshot](Images/tb_keypad.jpg)
 
 ### Hlavní řídící jednotka
 Slouží ke zpracování vstupního signálu z klávesnice, který se podle rozhodovacího kritéria posoudí, jestli odpovídá správnému heslu. Když odpovídá správnému heslu, které je nastaveno na kombinaci čísel 2222, zámek dveři se otevře. Po dobu 10s budou dveře otevřeny (v simulaci nastaveno 1000ns), poté se zámek dveří zavře a čeká se na zavření dveří 10s (v simulaci 1000 ns), pokud se dveře do časového intervalu nezavřou (signál door_i), spustí se alarm, který je možný resetovat master heslem 1111. Při otevření dveří použitím master hesla je zámek otevřený na 10s (v simulaci 1000ns), ale následně se nečeká na zavření dveří, nespustí se alarm. Vstupní signál z klávesnice je zpracován na výstupní signály, které jsou předány ovladači 4 7mi segmentových displejů.
@@ -808,7 +808,7 @@ end testbench;
 ```
 #### Screenshot simulace tb_controller
 Na začátku zkoušíme zadat 2 čísla, poté stlačíme cancel. S_state_pass se vrátil na POS1. Následně zadáme správné heslo, potvrdíme enter, dveře se otevřou na dobu 1000 ns, následně jsou dveře zavřené, nedojde ke spuštění alarmu. Po chvíli zadáme správné heslo, ale dveře nezavřeme, zapne se alarm. Alarm se zruší zadáním master hesla 1111, při tomto zadání nedojde k otevření dveří, toto heslo se používá pro zrušení alarmu.<br><br>
-![Screenshot](/Labs/project/Images/tb_controller1.jpg)
+![Screenshot](Images/tb_controller1.jpg)
 
 ### Ovladač 4 7mi segmentových displejů
 
@@ -1096,7 +1096,7 @@ end architecture Behavioral;
 
 ## TOP modul a simulace
 ### Schéma TOP modulu
-![Screenshot](/Labs/project/Images/top4.jpg)
+![Screenshot](Images/top4.jpg)
 ### Vstupní porty
 ```vhdl
 entity top is
